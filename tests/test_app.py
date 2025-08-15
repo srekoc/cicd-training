@@ -10,5 +10,5 @@ def test_greet():
     client = app.test_client()
     response = client.get("/greet/Sree")
     assert response.code == 200
-    assert b 'Hello, Sree' in response.data
+    assert b'Hello, Sree' in response.data
 
