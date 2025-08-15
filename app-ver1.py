@@ -3,10 +3,10 @@ import socket
 
 app = Flask (__name__)
 
+# created a new route goodbye
 @app.route ('/goodbye')
 def hello():
     return f'Goodbye @{ip_address}!!'
-
 
 @app.route ('/hello')
 def hello():
