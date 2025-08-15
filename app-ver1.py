@@ -3,6 +3,11 @@ import socket
 
 app = Flask (__name__)
 
+@app.route ('/greet/<name>')
+def hello():
+    return f"Hello, ${name}!!"
+
+
 @app.route ('/goodbye')
 def hello():
     return f'Goodbye @{ip_address}!!'
