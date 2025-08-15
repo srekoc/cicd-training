@@ -6,6 +6,8 @@ app = Flask (__name__)
 # created a new route goodbye!
 @app.route ('/goodbye')
 def goodbye():
+    hostname = socket.gethostname()
+    ip_address = socket.gethostbyname(hostname)
     return f'Goodbye @{ip_address}!!'
 
 # route for hello page
