@@ -15,7 +15,7 @@ def hello():
     ip_address = socket.gethostbyname(hostname)
     return f'Hello World @{ip_address}'
 
-@app.route ('/e')
+@app.route ('/')
 def home():
     hostname = socket.gethostname()
     ip_address = socket.gethostbyname(hostname)

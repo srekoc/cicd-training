@@ -1,10 +1,10 @@
-from app import app
+from app_ver1 import app
 
 def test_home():
     client = app.test_client()
     response = client.get('/')
     assert response.status_code == 200
-    assert b 'Hello World' in response.data
+    assert b'Hello World' in response.data
 
 def test_greet():
     client = app.test_client()
