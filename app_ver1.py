@@ -5,7 +5,7 @@ app = Flask (__name__)
 
 # created a new route goodbye!
 @app.route ('/goodbye')
-def hello():
+def goodbye():
     return f'Goodbye @{ip_address}!!'
 
 # route for hello page
