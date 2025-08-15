@@ -8,12 +8,12 @@ def hello():
     return f'Goodbye @{ip_address}!!'
 
 
-@app.route ('/hello')
+@app.route('/hello')
 def hello():
     hostname = socket.gethostname()
     ip_address = socket.gethostbyname(hostname)
-    return f'Hello World @{ip_address}'
-
+    return jsonify(message="Hello World", ip=ip_address)
+    
 @app.route ('/')
 def home():
     hostname = socket.gethostname()
