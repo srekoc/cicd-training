@@ -3,11 +3,11 @@ import socket
 
 app = Flask (__name__)
 
-# created a new route goodbye
+# created a new route goodbye!
 @app.route ('/goodbye')
 def hello():
     return f'Goodbye @{ip_address}!!'
-
+g
 @app.route ('/hello')
 def hello():
     hostname = socket.gethostname()
