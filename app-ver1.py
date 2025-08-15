@@ -7,14 +7,15 @@ app = Flask (__name__)
 @app.route ('/goodbye')
 def hello():
     return f'Goodbye @{ip_address}!!'
-g
+
+# route for hello page
 @app.route ('/hello')
 def hello():
     hostname = socket.gethostname()
     ip_address = socket.gethostbyname(hostname)
     return f'Hello World @{ip_address}'
 
-@app.route ('/')
+@app.route ('/e')
 def home():
     hostname = socket.gethostname()
     ip_address = socket.gethostbyname(hostname)
