@@ -1,4 +1,9 @@
 from app import app
+import sys
+import os
+
+# Add parent directory (project root) to Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 def test_home():
     client = app.test_client()
